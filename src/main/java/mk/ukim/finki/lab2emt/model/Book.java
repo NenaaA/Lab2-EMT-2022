@@ -23,8 +23,7 @@ public class Book {
 
     private Integer availableCopies;
 
-    public Book(Long id, String name, Category category, List<Author> authors, Integer availableCopies) {
-        this.id = id;
+    public Book(String name, Category category, List<Author> authors, Integer availableCopies) {
         this.name = name;
         this.category = category;
         this.authors = authors;
@@ -32,5 +31,21 @@ public class Book {
     }
 
     public Book() {
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public void setAuthors(List<Author> authors) {
+        this.authors = authors;
+    }
+
+    public void setAvailableCopies(Integer availableCopies) {
+        this.availableCopies = availableCopies;
     }
 }
